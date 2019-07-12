@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		344392E3AC7BE7C82CB6F14F /* libPods-BannerPageControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D42F7875CE3631C6841B11 /* libPods-BannerPageControl.a */; };
 		64236BDA22D8764200869590 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64236BD922D8764200869590 /* AppDelegate.m */; };
 		64236BDD22D8764200869590 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64236BDC22D8764200869590 /* ViewController.m */; };
 		64236BE022D8764200869590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64236BDE22D8764200869590 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		64236BE822D8764300869590 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64236BE722D8764300869590 /* main.m */; };
 		64236BF222D8764300869590 /* BannerPageControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64236BF122D8764300869590 /* BannerPageControlTests.m */; };
 		64236BFD22D8764300869590 /* BannerPageControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64236BFC22D8764300869590 /* BannerPageControlUITests.m */; };
+		64236C0F22D876AD00869590 /* AutoBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64236C0B22D876AD00869590 /* AutoBannerScrollView.m */; };
+		64236C1022D876AD00869590 /* BannerPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 64236C0C22D876AD00869590 /* BannerPageControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25CC7EF2431E9430C41C8229 /* Pods-BannerPageControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannerPageControl.debug.xcconfig"; path = "Target Support Files/Pods-BannerPageControl/Pods-BannerPageControl.debug.xcconfig"; sourceTree = "<group>"; };
 		64236BD522D8764200869590 /* BannerPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BannerPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64236BD822D8764200869590 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		64236BD922D8764200869590 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,13 @@
 		64236BF822D8764300869590 /* BannerPageControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BannerPageControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64236BFC22D8764300869590 /* BannerPageControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerPageControlUITests.m; sourceTree = "<group>"; };
 		64236BFE22D8764300869590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64236C0B22D876AD00869590 /* AutoBannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoBannerScrollView.m; sourceTree = "<group>"; };
+		64236C0C22D876AD00869590 /* BannerPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerPageControl.m; sourceTree = "<group>"; };
+		64236C0D22D876AD00869590 /* BannerPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerPageControl.h; sourceTree = "<group>"; };
+		64236C0E22D876AD00869590 /* AutoBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoBannerScrollView.h; sourceTree = "<group>"; };
+		64236C1122D8785100869590 /* Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		67D42F7875CE3631C6841B11 /* libPods-BannerPageControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BannerPageControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B47CF2D58D1AFCF98755F4DD /* Pods-BannerPageControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BannerPageControl.release.xcconfig"; path = "Target Support Files/Pods-BannerPageControl/Pods-BannerPageControl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344392E3AC7BE7C82CB6F14F /* libPods-BannerPageControl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B2C7E5F4BDAE9E88C3994BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25CC7EF2431E9430C41C8229 /* Pods-BannerPageControl.debug.xcconfig */,
+				B47CF2D58D1AFCF98755F4DD /* Pods-BannerPageControl.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		64236BCC22D8764200869590 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +106,8 @@
 				64236BF022D8764300869590 /* BannerPageControlTests */,
 				64236BFB22D8764300869590 /* BannerPageControlUITests */,
 				64236BD622D8764200869590 /* Products */,
+				0B2C7E5F4BDAE9E88C3994BE /* Pods */,
+				BC79344AFA5B63207E57C23B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +124,12 @@
 		64236BD722D8764200869590 /* BannerPageControl */ = {
 			isa = PBXGroup;
 			children = (
+				64236C0A22D8769200869590 /* Banner */,
 				64236BD822D8764200869590 /* AppDelegate.h */,
 				64236BD922D8764200869590 /* AppDelegate.m */,
 				64236BDB22D8764200869590 /* ViewController.h */,
 				64236BDC22D8764200869590 /* ViewController.m */,
+				64236C1122D8785100869590 /* Configuration.h */,
 				64236BDE22D8764200869590 /* Main.storyboard */,
 				64236BE122D8764300869590 /* Assets.xcassets */,
 				64236BE322D8764300869590 /* LaunchScreen.storyboard */,
@@ -132,6 +157,25 @@
 			path = BannerPageControlUITests;
 			sourceTree = "<group>";
 		};
+		64236C0A22D8769200869590 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				64236C0E22D876AD00869590 /* AutoBannerScrollView.h */,
+				64236C0B22D876AD00869590 /* AutoBannerScrollView.m */,
+				64236C0D22D876AD00869590 /* BannerPageControl.h */,
+				64236C0C22D876AD00869590 /* BannerPageControl.m */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		BC79344AFA5B63207E57C23B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67D42F7875CE3631C6841B11 /* libPods-BannerPageControl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +183,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64236C0122D8764300869590 /* Build configuration list for PBXNativeTarget "BannerPageControl" */;
 			buildPhases = (
+				1D7B9BA0A87D73455A57B66D /* [CP] Check Pods Manifest.lock */,
 				64236BD122D8764200869590 /* Sources */,
 				64236BD222D8764200869590 /* Frameworks */,
 				64236BD322D8764200869590 /* Resources */,
@@ -257,6 +302,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D7B9BA0A87D73455A57B66D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BannerPageControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		64236BD122D8764200869590 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +334,8 @@
 			files = (
 				64236BDD22D8764200869590 /* ViewController.m in Sources */,
 				64236BE822D8764300869590 /* main.m in Sources */,
+				64236C0F22D876AD00869590 /* AutoBannerScrollView.m in Sources */,
+				64236C1022D876AD00869590 /* BannerPageControl.m in Sources */,
 				64236BDA22D8764200869590 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +505,7 @@
 		};
 		64236C0222D8764300869590 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25CC7EF2431E9430C41C8229 /* Pods-BannerPageControl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +523,7 @@
 		};
 		64236C0322D8764300869590 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B47CF2D58D1AFCF98755F4DD /* Pods-BannerPageControl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
