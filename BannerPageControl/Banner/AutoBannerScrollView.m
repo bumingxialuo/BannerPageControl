@@ -91,13 +91,27 @@
     self.pageControl.pageCount = pageCount;
     self.pageControl.hidden = pageCount<=1;
 }
+- (void)selectIndexImage:(UITapGestureRecognizer *)tap {
+    CGPoint location = [tap locationInView:_scrollView];
+    CGFloat offSetX = location.x - _scrollView.contentOffset.x;
+    if (offSetX<17.5 || offSetX>(BannerImageWidth-17.5)) {
+        return;
+    }
+    NSLog(@"_scrollView.contentOffset.x=%2f",_scrollView.contentOffset.x);
+    NSInteger index = _scrollView.contentOffset.x / (BannerImageWidth+10);
+    if (self.clickWithBlock) {
+        self.clickWithBlock(index);
+    }
+}
 
 
 -(void)initUI
 {
     __weak typeof(self) weakSlef = self;
     [self addSubview:self.scrollView];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(selectIndexImage:)];
     self.scrollView.contentSize = CGSizeMake((BannerImageWidth+10)*pageCount+25, 0);
+    [self.scrollView addGestureRecognizer:tap];
     [self.scrollView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 25, 0));
     }];
